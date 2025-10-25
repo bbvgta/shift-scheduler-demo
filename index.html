@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shift Scheduler Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <h1>🕒 Shift Scheduler Prototype</h1>
+
+  <main class="dashboard">
+    <!-- ===== Schedule Section ===== -->
+    <section id="schedule-section" class="card">
+      <h2><i class="fa-solid fa-calendar"></i> Current Schedule</h2>
+      <table id="schedule-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>User</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- Add User Section -->
+      <div id="addUserSection">
+        <input type="text" id="newUserName" placeholder="Enter new user name">
+        <button id="addUserBtn">Add User</button>
+      </div>
+    </section>
+
+    <!-- ===== Mood Section ===== -->
+    <section id="mood-section" class="card">
+      <h2><i class="fa-solid fa-face-smile"></i> Shift Mood Survey</h2>
+      <select id="userSelect">
+        <option value="User1">User 1</option>
+        <option value="User2">User 2</option>
+      </select>
+      <select id="moodSelect">
+        <option value="1">😞 1 - Bad</option>
+        <option value="2">😐 2 - Okay</option>
+        <option value="3">😊 3 - Good</option>
+      </select>
+      <button id="submitMood">Submit Mood</button>
+
+      <!-- Simulate Week + Mood Trends -->
+      <div id="moodTools">
+        <button id="simulateWeek">Simulate Week</button>
+        <div id="moodTrends"></div>
+      </div>
+    </section>
+
+    <!-- ===== Admin Section ===== -->
+    <section id="admin-section" class="card">
+      <h2><i class="fa-solid fa-bell"></i> Admin Notifications</h2>
+      <ul id="adminLogs"></ul>
+      <button id="resetApp" class="danger">Reset App (Start Week 1)</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

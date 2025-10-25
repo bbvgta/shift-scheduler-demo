@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafc;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #2b6cb0;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #1e4e8c;
+}
+
+table {
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  width: 80%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #edf2f7;
+}
+
+button {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a365d;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 30%;
+  min-width: 280px;
+}
+
+#addUserSection {
+  margin-top: 15px;
+}
+
+#simulateWeek {
+  background: #48bb78;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#simulateWeek:hover {
+  background: #2f855a;
+}
+
+#moodTrends {
+  margin-top: 10px;
+  text-align: left;
+  background: #edf2f7;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#adminLogs {
+  list-style: none;
+  padding: 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#adminLogs li {
+  background: #e2e8f0;
+  margin: 6px auto;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: left;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+button.danger {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.danger:hover {
+  background: #9b2c2c;
+}
